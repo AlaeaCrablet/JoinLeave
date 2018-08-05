@@ -12,7 +12,7 @@ public class PlayerLeaveListener implements EventListener<ClientConnectionEvent.
     private Logger logger;
 
     @Override
-    public void handle(ClientConnectionEvent.Disconnect event) throws Exception{
+    public void handle(ClientConnectionEvent.Disconnect event) throws Exception {
         Player player = event.getTargetEntity();
         event.clearMessage();
 
